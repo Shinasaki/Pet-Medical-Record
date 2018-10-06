@@ -14,8 +14,7 @@ import HomeProfile from '@/components/HomeProfile'
 Vue.use(Router);
 
 let router = new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'Home',
       component: Home,
@@ -56,7 +55,7 @@ let router = new Router({
       }
     },
     {
-      path: '/:pet_id',
+      path: '/pet/:pet_id',
       name: 'view-pet',
       component: ViewPet,
       meta: {
@@ -64,7 +63,7 @@ let router = new Router({
       }
     },
     {
-      path: '/:profile_id',
+      path: '/profile/:profile_id',
       name: 'view-profile',
       component: ViewProfile,
       meta: {
